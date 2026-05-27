@@ -170,7 +170,7 @@ export default function CurriculumVideoPlayer() {
       <div className="min-w-0 flex-1">
         <div className="linear-card overflow-hidden">
           <div className="relative aspect-video w-full bg-[#0a0a0a]">
-            {isPlaying && canPlay && selected.youtubeId ? (
+            {isPlaying && canPlay && selected && selected.youtubeId ? (
               <iframe
                 key={selected.id}
                 title={selected.title}
