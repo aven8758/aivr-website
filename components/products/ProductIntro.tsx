@@ -221,6 +221,7 @@ export default function ProductIntro() {
       <section className="relative overflow-hidden border-t border-white/5 bg-[#070707] py-16 sm:py-20 md:py-24">
         <SectionGlow />
         <div className="relative mx-auto max-w-[1400px] px-4 sm:px-6 md:px-10 lg:px-14">
+          <SectionHeading title="Video demonstration" align="left" className="mb-8 md:mb-10" />
           <CurriculumVideoPlayer />
         </div>
       </section>

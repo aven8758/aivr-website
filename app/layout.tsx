@@ -11,6 +11,10 @@ export const metadata: Metadata = {
   title: "AIVR — A320 SOPs Trainer",
   description:
     "The latest training technologies at your fingertips. Professional flight training solutions.",
+  icons: {
+    icon: [{ url: "/favicon.png", type: "image/png" }],
+    apple: [{ url: "/favicon.png", type: "image/png" }],
+  },
 };
 
 export const viewport = {

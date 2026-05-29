@@ -17,6 +17,12 @@ export type CurriculumLesson = {
 
 export const A320_SOP_LESSONS: CurriculumLesson[] = [
   {
+    id: "newbie-guide",
+    title: "Newbie Guide",
+    available: true,
+    youtubeId: "7WYv_SpBl-E",
+  },
+  {
     id: "preliminary-cockpit-preparation",
     title: "Preliminary Cockpit Preparation",
     available: true,
@@ -30,38 +36,38 @@ export const A320_SOP_LESSONS: CurriculumLesson[] = [
   {
     id: "cockpit-preparation",
     title: "Cockpit Preparation",
-    available: false,
-    // youtubeId: "",
+    available: true,
+    youtubeId: "7f_6WpUG-DU",
   },
   {
     id: "before-pushback-or-start-engine",
     title: "Before Pushback or Start Engine",
-    available: false,
-    // youtubeId: "",
+    available: true,
+    youtubeId: "T88VuF8H6MM",
   },
   {
     id: "taxi",
     title: "Taxi",
-    available: false,
-    // youtubeId: "",
+    available: true,
+    youtubeId: "30g6QZ42k6k",
   },
   {
     id: "takeoff-before-takeoff",
     title: "Takeoff, Before Takeoff",
-    available: false,
-    // youtubeId: "",
+    available: true,
+    youtubeId: "0KlYSBOqVvc",
   },
   {
     id: "climb",
     title: "Climb",
-    available: false,
-    // youtubeId: "",
+    available: true,
+    youtubeId: "hf_X_ooVw2U",
   },
   {
     id: "cruise",
     title: "Cruise",
-    available: false,
-    // youtubeId: "",
+    available: true,
+    youtubeId: "n77CZffZ4C0",
   },
   {
     id: "descent-preparation",
@@ -174,7 +180,7 @@ export default function CurriculumVideoPlayer() {
               <iframe
                 key={selected.id}
                 title={selected.title}
-                src={`https://www.youtube-nocookie.com/embed/${selected.youtubeId}?autoplay=1&rel=0&modestbranding=1`}
+                src={`https://www.youtube-nocookie.com/embed/${selected.youtubeId}?autoplay=1&rel=0&modestbranding=1&vq=hd720`}
                 className="absolute inset-0 h-full w-full border-0 bg-black"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
